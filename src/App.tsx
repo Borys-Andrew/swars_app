@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ReactFlowProvider } from '@xyflow/react';
+import HeroPage from './pages/HeroPage';
+import HomePage from './pages/HomePage';
+import Layout from './templates/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={<Layout />}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route
+            index
+            element={<HomePage />}
+          />
+          <Route
+            path="/:id"
+            element={
+              <ReactFlowProvider>
+                <HeroPage />
+              </ReactFlowProvider>
+            }
+          />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

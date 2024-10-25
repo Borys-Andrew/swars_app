@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Star Wars Heroes Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a test task for a React Developer. The main goal is to create a web application for viewing Star Wars heroes, their movies, and spaceships. The application not only allows users to see a list of heroes but also provides detailed information about each hero in a graph format using React Flow.
 
-## Available Scripts
+## 🚀 Functionality
 
-In the project directory, you can run:
+### Star Wars Heroes List
 
-### `npm start`
+- Using the [sw-api.starnavi.io API](https://sw-api.starnavi.io/), the application displays a list of Star Wars heroes.
+- Pagination or infinite scroll is implemented for easy navigation through the list
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Hero Details
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- When clicking on a hero, a graph is displayed where:
+  -- The main node is the selected hero.
+  -- Connections lead from the hero to the movies they appear in.
+  -- Connections from each movie lead to the spaceships that the hero traveled on.
 
-### `npm test`
+### Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js:** for creating the application's interface.
+- **React Flow:** for visualizing data in a graph format.
+- **TypeScrip:** to ensure code reliability and clarity.
+- **Tailwind CSS:** for styling the interface with responsive support.
 
-### `npm run build`
+## 💻 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Clone the Repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+  git clone git@github.com:Borys-Andrew/swars_app.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Install dependecies:**
 
-### `npm run eject`
+```sh
+  npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Start App:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+  npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### **that's all, enjoy**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📞 Contact Information
 
-## Learn More
+Feel free to reach out for collaboration or job opportunities!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 📱 **Phone**: +38-073-100-74-63
+- 📧 **Email**: [borysandrew9@gmail.com](mailto:borysandrew9@gmail.com)
+- 🔗 **LinkedIn**: [Andrew Borys](https://www.linkedin.com/in/andrew-borys-233365200/)
+- 💬 **Telegram**: [@BorysAndrew](https://t.me/BorysAndrew)
+- 💻 **GitHub**: [Andrew-Borys](https://github.com/Andrew-Borys)
+- 🌍 **Location**: Lviv, Ukraine
+- 👨‍💻 Open to work in office, hybrid, or remotely.
